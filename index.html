@@ -7,8 +7,8 @@
     <body ng-app="App" ng-controller="appCtrl">
         <div id="container">
             <ol>
-                <li ng-repeat="it in items">
-                    {{it}} <span ng-click="rmItem($index)">x</span>
+                <li ng-repeat="x in items">
+                    name: {{x.name}} ammount: {{x.ammount}} <span ng-click="rmItem($index)">x</span>
                 </li>
             </ol>
             <input ng-model="item" type="text" />
